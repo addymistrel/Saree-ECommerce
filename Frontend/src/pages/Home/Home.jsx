@@ -1,5 +1,4 @@
 import React from "react";
-import MainNavbar from "../../components/Navbar/MainNavbar";
 import "./Home.css";
 import MainImage from "../../assets/main.jpg";
 import { Image } from "@heroui/react";
@@ -9,7 +8,6 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 export default function Home() {
   return (
     <>
-      <MainNavbar />
       <div className="flex justify-center item-center">
         <Image
           width="80%"
