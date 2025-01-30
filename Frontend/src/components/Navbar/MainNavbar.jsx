@@ -9,8 +9,8 @@ import {
   NavbarMenuItem,
   Link,
   Button,
-} from "@nextui-org/react";
-import { AcmeLogo } from "./AcmeLogo.jsx";
+} from "@heroui/react";
+import Logo from "../../assets/logo.png";
 
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -36,25 +36,20 @@ export default function MainNavbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">ACME</p>
+          <img src={Logo} alt="Logo" width={42} height={42} />
+          <p className="font-bold text-inherit">SUBH.ARAMBH</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
+          <Link color="foreground" href="/">
+            Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link href="/products" aria-current="page">
+            Products
           </Link>
         </NavbarItem>
       </NavbarContent>
